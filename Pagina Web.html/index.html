@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ensayo Visual</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Gif Centrado -->
+    <img class="gif-centrado" src="image/Ojo 1.gif">
+
+    <div class="contenedor.iconos">
+        <!--Carpetas-->
+     <a href="image/Ensayos/Ensayo Visual 1.png"
+        class="escritorio-icono" target="_blank">
+        <img src="image/Visual 1_icon.png" alt="carpeta">
+        <span>Ensayo Visual 1</span>
+     </a>
+     <a href="image/Ensayos/Ensayo Visual 3.png"
+        class="escritorio-icono" target="_blank">
+        <img src="image/Visual 3_icon.png" alt="carpeta">
+        <span>Ensayo Visual 3</span>
+     </a>
+     <a href="https://editor.p5js.org/AstroS4m/full/BE1l7Dos3"
+        class="escritorio-icono" target="_blank">
+        <img src="image/Windows_95_Document_to_Document.png" alt="carpeta">
+        <span>Ensayo Visual 4</span>
+     </a>
+     <a href="https://editor.p5js.org/AstroS4m/full/KUygy_Z1D"
+        class="escritorio-icono" target="_blank">
+        <img src="image/Windows_95_DISPLAY_MINI.png" alt="carpeta">
+        <span>Ensayo Visual 5</span>
+     </a>
+     <a href="https://youtube.com/shorts/fYFPtCdOK_A?feature=share"
+        class="escritorio-icono" target="_blank">
+        <img src="image/Windows_95_Etternet.png" alt="carpeta">
+        <span>Ensayo Visual 6</span>
+     </a>
+     <a href="https://editor.p5js.org/AstroS4m/full/z_DnAf7EW"
+        class="escritorio-icono" target="_blank">
+        <img src="image/Windows_95_Shortcut_(big).png" alt="carpeta">
+        <span>Ensayo Visual 7</span>
+     </a>
+      <a href="https://editor.p5js.org/AstroS4m/full/dpxI13YHk"
+        class="escritorio-icono" target="_blank">
+        <img src="image/Visual 8_icon.png" alt="carpeta">
+        <span>Ensayo Visual 8</span>
+     </a>
+       <a href="https://editor.p5js.org/AstroS4m/full/LuC6NPMg9"
+        class="escritorio-icono" target="_blank">
+        <img src="image/Visual 9_icon.png" alt="carpeta">
+        <span>Ensayo Visual 10</span>
+     </a>
+       <a href="image/Ensayos/Ensayo Visual 2.gif"
+        class="escritorio-icono" target="_blank">
+        <img src="image/Visual 2_icon.png" alt="carpeta">
+        <span>Ensayo Visual 2</span>
+     </a>
+     </div>
+   <div class="taskbar">
+      <div class="boton-inicio">
+         <img src="image/Windows_95_FLYING_WINDOWS.png"
+         alt="Windows logo" style="width:18px;">
+         <span>Inicio</span>
+      </div>
+      <div class="taskbar-time"
+      id="reloj"></div>
+   </div>
+<script>
+    function actualizarReloj() {
+        const ahora = new Date();
+        const hora = ahora.getHours().toString().padStart(2,'0');
+        const minuto = ahora.getMinutes().toString().padStart(2,'0');
+        document.getElementById('reloj').innerText = `${hora}:${minuto}`;
+    }
+    actualizarReloj();
+    setInterval(actualizarReloj, 1000);
+</script>
+    
+</body>
+</html>
