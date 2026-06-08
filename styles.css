@@ -1,0 +1,141 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    background: url(image/Fondo.png) center / cover no-repeat fixed;
+    
+}
+
+/*Escritorio*/
+
+/*.escritorio {
+    width: 100%;
+    height: 100%;
+    background-image: url(image/Fondo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 20px 0 60px 0;
+    overflow-y: auto;
+}*/
+
+.gif-centrado {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: auto;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0.85;
+    
+}
+/*Contenedor de Iconos*/
+.contenedor-iconos {
+    position: relative;
+    height: 100%;
+    z-index: 2;
+}
+
+.escritorio-icono {
+    position: absolute;
+    width:100px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.05s ease;
+    text-decoration: none;
+    color: aliceblue;
+    text-shadow: 0 0 5px black;
+    z-index: 3;
+
+}
+
+/*Posiciones de las carpetas*/
+.escritorio-icono:nth-child(1) { left: 30px; top: 30px;}
+.escritorio-icono:nth-child(2) { left: 30px; top: 140px;}
+.escritorio-icono:nth-child(3) { left: 30px; top: 250px;}
+.escritorio-icono:nth-child(4) { left: 30px; top: 360px;}
+.escritorio-icono:nth-child(5) { left: 30px; top: 470px;}
+.escritorio-icono:nth-child(6) { left: 140px; top: 30px;}
+.escritorio-icono:nth-child(7) { left: 140px; top: 140px;}
+.escritorio-icono:nth-child(8) { left: 140px; top: 250px;}
+.escritorio-icono:nth-child(9) { left: 140px; top: 360px;}
+
+
+
+.escritorio-icono:hover {
+    transform: scale(1.02);
+    background-color: rgba(255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.escritorio-icono img {
+    width: 70px;
+    height: 64px;
+    display: block;
+    margin: 4px auto 4px;
+    image-rendering: crisp-edges;
+}
+
+.escritorio-icono span {
+    display: block;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2px 4px;
+    word-break: break-word;
+
+}
+
+/*Barra de Tareas*/
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 52px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    font-size: 13px;
+    color: aliceblue;
+
+}
+.boton-inicio {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 4px 14px;
+    border-radius: 8px;
+    cursor: default;
+
+}
+
+.boton-inicio img {
+    width: 20px;
+    height: 20px;
+
+}
+
+.taskbar-time{
+    font-family: monospace;
+    background: rgba(0, 0, 0, 0.6);
+    padding:4px 8px;
+    border-radius: 4px;
+
+}
+
